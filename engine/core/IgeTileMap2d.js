@@ -305,7 +305,7 @@ var IgeTileMap2d = IgeEntity.extend({
 	
 	tileToPoint: function (x, y) {
 		var point;
-		
+		/*	
 		if (this._mountMode === 0) {
 			point = new IgePoint3d(x, y, 0)
 				.thisMultiply(this._tileWidth, this._tileHeight, 1);
@@ -322,7 +322,9 @@ var IgeTileMap2d = IgeEntity.extend({
 		
 		point.x2 = point.x / 2;
 		point.y2 = point.y / 2;
-		
+		*/
+                point = new IgePoint3d(x,y,0).thisMultiply(this._tileWidth, this._tileHeight, 1);
+
 		return point;
 	},
 
